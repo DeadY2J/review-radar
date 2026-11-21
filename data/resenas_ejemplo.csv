@@ -1,0 +1,11 @@
+id,fecha,cliente,plataforma,puntuacion,comentario
+1,2026-11-01,Lucía G.,Google,5,"El pedido llegó en 24 horas y perfectamente embalado. El soporte por chat me resolvió una duda antes de comprar en dos minutos."
+2,2026-11-02,Carlos M.,Trustpilot,1,"Llevo 9 días esperando un paquete que supuestamente llegaba en 48h. Nadie contesta a los correos y el teléfono siempre comunica. Pésimo servicio."
+3,2026-11-03,Elena R.,Google,4,"El producto tiene muy buena calidad para el precio que cuesta, aunque las instrucciones venían solo en inglés y me costó configurarlo."
+4,2026-11-04,Javier P.,Trustpilot,2,"Me cobraron dos veces el mismo pedido por un error en la pasarela de pago. Llevo cuatro días pidiendo el reembolso y sigo sin respuesta."
+5,2026-11-05,Marta S.,Google,5,"Repetiré seguro. Tuve que cambiar la talla y la recogida en casa fue rapidísima y gratuita."
+6,2026-11-06,David L.,Trustpilot,2,"La caja llegó golpeada y el artículo tenía un arañazo visible. Por 120 euros esperaba mucho más cuidado en el envío."
+7,2026-11-07,Sofía T.,Google,3,"El producto cumple sin más, pero los gastos de envío me parecen carísimos en comparación con otras tiendas similares."
+8,2026-11-08,Andrés V.,Trustpilot,1,"Me enviaron un modelo equivocado. Al abrir incidencia me dijeron que tenía que pagar yo los gastos de devolución. Una vergüenza, voy a poner reclamación."
+9,2026-11-09,Paula N.,Google,5,"Atención impecable de principio a fin. Me avisaron por WhatsApp cuando el repartidor estaba cerca."
+10,2026-11-10,Rubén C.,Google,2,"La web va lentísima desde el móvil y el código de descuento de bienvenida no funcionaba al finalizar la compra."
