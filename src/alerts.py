@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+LIMITE_CAMPO = 1024
+
 
 def enviar_alerta_discord(df: pd.DataFrame) -> tuple[bool, str]:
     """
@@ -34,6 +36,8 @@ def enviar_alerta_discord(df: pd.DataFrame) -> tuple[bool, str]:
                 f"• **{fila['cliente']}** ({fila['categoria']}): {fila['resumen']}"
             )
         texto_urgentes = "\n".join(lineas_urgentes)
+        if len(texto_urgentes) > LIMITE_CAMPO:  # Discord rechaza campos de más de 1024 caracteres
+            texto_urgentes = texto_urgentes[: LIMITE_CAMPO - 1] + "…"
         color_tarjeta = 15158332  # Rojo (hay alertas críticas)
     else:
         texto_urgentes = "Sin incidencias de urgencia alta en este lote."
@@ -42,6 +46,7 @@ def enviar_alerta_discord(df: pd.DataFrame) -> tuple[bool, str]:
     # Estructura estándar de tarjeta (Embed) que entiende Discord
     payload = {
         "username": "ReviewRadar AI",
+        "allowed_mentions": {"parse": []},  # el texto viene de clientes: que no pueda mencionar a nadie
         "embeds": [
             {
                 "title": "📡 Resumen Ejecutivo — ReviewRadar AI",

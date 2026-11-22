@@ -45,3 +45,22 @@ review-radar/
 ├── app.py                       # Aplicación web en Streamlit
 ├── .env.example                 # Plantilla de variables de entorno
 └── requirements.txt             # Dependencias del proyecto
+
+## 🧪 Tests
+
+Los tests no llaman a Groq ni a Discord (usan respuestas simuladas):
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest
+```
+
+## ⚠️ Uso responsable y privacidad
+
+* Las reseñas son texto de terceros. La IA puede equivocarse o dejarse llevar por instrucciones escondidas en una reseña, así que **una persona debe revisar cada respuesta sugerida antes de enviarla**.
+* Los comentarios y los nombres de cliente se envían a Groq para analizarlos y, en el resumen, a Discord. Con datos reales de clientes eso entra en la RGPD: informa a tus clientes y revisa las condiciones de ambos servicios.
+* Los datos de `data/` son **ficticios**, creados para la demo.
+
+## 📄 Licencia
+
+MIT. Consulta [LICENSE](LICENSE).
