@@ -35,7 +35,9 @@ if "df_datos" not in st.session_state:
 
 # Si el usuario sube un archivo nuevo, mostramos el botón para analizarlo con IA
 if archivo_subido is not None:
-    if st.sidebar.button("🚀 Analizar con IA ahora", type="primary", use_container_width=True):
+    if not os.getenv("GROQ_API_KEY"):
+        st.sidebar.error("Falta GROQ_API_KEY en el archivo .env. Consulta el README.")
+    elif st.sidebar.button("🚀 Analizar con IA ahora", type="primary", use_container_width=True):
         df_nuevo = pd.read_csv(archivo_subido)
         barra = st.sidebar.progress(0, text="Analizando reseñas con Groq...")
 

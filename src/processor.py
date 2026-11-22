@@ -12,17 +12,17 @@ def procesar_resenas(df: pd.DataFrame, callback_progreso=None) -> pd.DataFrame:
     total = len(df)
 
     # Recorremos el CSV fila por fila
-    for indice, fila in df.iterrows():
+    for posicion, (_, fila) in enumerate(df.iterrows(), start=1):
         comentario = str(fila["comentario"])
         puntuacion = int(fila["puntuacion"])
 
-        print(f"Analizando reseña {indice + 1}/{total} ({fila['cliente']})...")
+        print(f"Analizando reseña {posicion}/{total} ({fila['cliente']})...")
         analisis = analizar_resena(comentario, puntuacion)
         resultados.append(analisis)
 
         # Si hay una barra de progreso conectada (la usaremos en Streamlit), la actualizamos
         if callback_progreso:
-            callback_progreso((indice + 1) / total)
+            callback_progreso(posicion / total)
 
         # Pequeña pausa de medio segundo para no saturar el límite gratuito de la API
         time.sleep(0.5)
