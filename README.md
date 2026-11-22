@@ -2,6 +2,10 @@
 
 Aplicación web y pipeline automatizado en Python para analizar reseñas de clientes con IA, detectar incidencias críticas al instante, redactar respuestas listas para enviar y notificar al equipo mediante Webhooks.
 
+## 🎬 Demo
+
+▶️ [Ver vídeo demo (60 s)](demo/reviewradar-demo.mp4) · [Guion y texto de portfolio](DEMO.md)
+
 ## 🎯 Problema, Solución e Impacto
 
 * **Problema:** Los equipos de atención al cliente y operaciones pierden horas leyendo reseñas dispersas, clasificando quejas manualmente y redactando respuestas repetitivas, con el riesgo de detectar tarde casos graves (cobros duplicados, envíos perdidos o reclamaciones).
