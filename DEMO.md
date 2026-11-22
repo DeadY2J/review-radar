@@ -1,6 +1,6 @@
 # 🎬 Demo de ReviewRadar AI (60 s)
 
-▶️ Vídeo: [`demo/reviewradar-demo.mp4`](demo/reviewradar-demo.mp4)
+▶️ Vídeo: [`demo/reviewradar-demo.mp4`](https://raw.githubusercontent.com/DeadY2J/review-radar/main/demo/reviewradar-demo.mp4)
 
 ## Guion
 

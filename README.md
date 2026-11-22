@@ -4,7 +4,7 @@ Aplicación web y pipeline automatizado en Python para analizar reseñas de clie
 
 ## 🎬 Demo
 
-▶️ [Ver vídeo demo (60 s)](demo/reviewradar-demo.mp4) · [Guion y texto de portfolio](DEMO.md)
+▶️ [Ver vídeo demo (60 s)](https://raw.githubusercontent.com/DeadY2J/review-radar/main/demo/reviewradar-demo.mp4) · [Guion y texto de portfolio](DEMO.md)
 
 ## 🎯 Problema, Solución e Impacto
 
