@@ -61,6 +61,10 @@ python -m pytest
 * Los comentarios y los nombres de cliente se envían a Groq para analizarlos y, en el resumen, a Discord. Con datos reales de clientes eso entra en la RGPD: informa a tus clientes y revisa las condiciones de ambos servicios.
 * Los datos de `data/` son **ficticios**, creados para la demo.
 
+## 🤝 Cómo se ha hecho
+
+Desarrollado con ayuda de Claude (Anthropic). Yo definí la idea y los requisitos, y decido qué se incorpora al proyecto; los tests y el CI comprueban el resto.
+
 ## 📄 Licencia
 
 MIT. Consulta [LICENSE](LICENSE).
