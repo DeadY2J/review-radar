@@ -63,7 +63,7 @@ python -m pytest
 
 ## 🤝 Cómo se ha hecho
 
-Desarrollado con ayuda de Claude (Anthropic). Yo definí la idea y los requisitos, y decido qué se incorpora al proyecto; los tests y el CI comprueban el resto.
+Desarrollado con ayuda de Claude (Anthropic) y Gemini (Google). Yo definí la idea y los requisitos, y decido qué se incorpora al proyecto; los tests y el CI comprueban el resto.
 
 ## 📄 Licencia
 
